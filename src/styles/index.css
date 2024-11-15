@@ -1,0 +1,152 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Dark and Light Mode */
+.light-mode {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  position:fixed;
+  width: 100vw;
+  z-index: 10;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 2rem;
+}
+
+.title-highlight {
+  color: #e74c3c;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Navbar Links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-search-filters {
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* Centering the search and filter */
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-search-filters input,
+.navbar-search-filters select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.navbar-search-filters input {
+  width: 300px; 
+  margin-left: 60px;
+
+}
+
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.cart-container {
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.cart-count {
+  border-radius: 50%;
+  padding: 5px 10px;
+  margin-left: 5px;
+  color: white;
+
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #2c3e50;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    z-index: 10;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-search-filters {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+ 
+
+  .theme-toggle-btn {
+    margin-top: 10px;
+  }
+
+  .cart-container {
+    margin-top: 20px;
+    justify-content: center;
+  }
+}
+
+
+.img-logo{
+  height: 70px;
+  width: 70px;
+  background-color: black;
+}
